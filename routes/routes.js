@@ -42,6 +42,8 @@ exports.cityPageHandler = function(req, res){
 	res.render('city.ejs', {cityName:cityNameValue, 
 						tagline: taglineValue, person:req.session.userName});
 }
+
+// use extra logout button in app
 exports.logoutPageHandler = function(req, res){
 	req.session.destroy();
 console.log("logout Page");
